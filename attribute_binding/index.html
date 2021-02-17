@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <a :href="vueLink">歡迎瀏覽Vue</a>
+            <img :src="vuePic">
+        </div>
+
+        <!-- import App -->
+        <script src="./main.js"></script>
+
+        <!-- mount App -->
+        <script>
+            const mountedApp = app.mount('#app');
+        </script>
+
+    </body>
+</html>

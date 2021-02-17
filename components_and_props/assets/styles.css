@@ -1,0 +1,20 @@
+.display{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 30%;
+    width: 80%;
+    margin: 2px;
+}
+.blog-img, .blog-info{
+    width: 50%;
+    /* border: 2px solid red; */
+}
+img{
+    width: 100%;
+}

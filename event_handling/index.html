@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/styles.css"/>
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <div>購買項目</div>
+                <img :src="foodPic">
+                <ul>
+                    <li v-for="food in foods" @mouseover="changeFoodPic(food.img)">{{ food.name }}</li>
+                </ul>
+                <button @click="buyTimes+=1">購買</button>
+            </div>
+            <div>已購<span>{{ buyTimes }}</span>次</div>
+        </div>
+
+        <!-- import App -->
+        <script src="./main.js"></script>
+
+        <!-- mount App -->
+        <script>
+            const mountedApp = app.mount('#app');
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <submit-form @submit-form-event="setFormData"></submit-form>
+            <show-form :data="formData" v-if="formData"></show-form>
+        </div>
+
+
+        <!-- import App -->
+        <script src="./main.js"></script>
+
+        <!-- import Components-->
+        <script src="./components/SubmitForm.js"></script>
+        <script src="./components/ShowForm.js"></script>
+        <!-- mount App -->
+        <script>
+            const mountedApp = app.mount('#app');
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./assets/styles.css"/>
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <div>Color Change</div>
+                <div class="square" :style="{ borderColor: setBorderColor}"></div>
+                <ul>
+                    <li v-for="color in colors" @mouseover="changeBorderColor(color)">{{ color }}</li>
+                </ul>
+
+                <button :class="{ disabledButton: !isButtonEnable}" @click="isButtonEnable = !isButtonEnable">{{ isButtonEnable ? buttonStatus[1] : buttonStatus[0] }}</button>
+            </div>
+        </div>
+
+        <!-- import App -->
+        <script src="./main.js"></script>
+
+        <!-- mount App -->
+        <script>
+            const mountedApp = app.mount('#app');
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>{{ message }}</h1>
+            <p v-show="isOnSale">On Sale!</p>
+            <div>Inventory:
+                <span v-if="inventory > 10">In Stock</span>
+                <span v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</span>
+                <span v-else>Out of Stock</span>
+            </div>
+        </div>
+
+        <!-- import App -->
+        <script src="./main.js"></script>
+
+        <!-- mount App -->
+        <script>
+            const mountedApp = app.mount('#app');
+        </script>
+
+    </body>
+</html>

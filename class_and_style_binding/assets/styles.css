@@ -1,0 +1,13 @@
+.square{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+}
+
+button{
+    background-color: powderblue
+}
+.disabledButton {
+    background-color: #d8d8d8;
+    cursor: not-allowed;
+  }

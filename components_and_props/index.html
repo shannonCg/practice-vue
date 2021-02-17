@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/styles.css"/>
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div>Blog</div>
+            <div class="display">
+                <blog-info v-for="food in foods" :blog-img="food.img" :blog-info="'this is '+food.name"></blog-info>
+            </div>
+        </div>
+
+        <!-- import App -->
+        <script src="./main.js"></script>
+
+        <!-- import Components-->
+        <script src="./components/BlogInfo.js"></script>
+
+        <!-- mount App -->
+        <script>
+            const mountedApp = app.mount('#app');
+        </script>
+
+    </body>
+</html>

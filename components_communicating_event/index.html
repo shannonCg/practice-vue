@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            <plus-button @add-one-event="addOne"></plus-button>
+            <h1>{{ result }}</h1>
+        </div>
+
+        <!-- import App -->
+        <script src="./main.js"></script>
+
+        <!-- import Components-->
+        <script src="./components/PlusButton.js"></script>
+
+        <!-- mount App -->
+        <script>
+            const mountedApp = app.mount('#app');
+        </script>
+
+    </body>
+</html>
